@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">A survey to gather information about the user</p>
+    <form id="survey-form">
+        <p>
+            <label id="name-label" for="name">Name: </label>
+            <input required placeholder="Enter your name" id="name">
+        </p>
+        <p>
+            <label id="email-label" for="email">Email: </label>
+            <input required type="email" placeholder="Enter your email" id="email">
+        </p>
+        <p>
+            <label id="number-label" for="number">Number: </label>
+            <input required min="0" max="99" type="number" placeholder="Enter your number" id="number">
+        </p>
+        <p>
+            <select id="dropdown">
+                <option value="" disabled selected>Favorite Sport</option>
+                <option>Basketball</option>
+                <option>Soccer</option>
+                <option>Football</option>
+            </select>
+        </p>
+        <p>
+            <input name="marital-status" type="checkbox" value="Single">Single
+            <input name="marital-status" type="checkbox" value="Married">Married
+            <input name="marital-status" type="checkbox" value="Complicated">Complicated
+        </p>
+        <p>
+            <input name="favorite-sport" type="radio" value="Basketball">Basketball
+            <input name="favorite-sport" type="radio" value="Soccer">Soccer
+            <input name="favorite-sport" type="radio" value="Football">Football
+        </p>
+        <p>
+            <textarea placeholder="Insert additional comments"></textarea>
+        </p>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
